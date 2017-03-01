@@ -1,0 +1,46 @@
+<ion-content class="login">
+  <ion-grid class="slide_header">
+    <ion-row>
+      <ion-col width-90>
+        <p (click)="doLogin()">Skip</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <img style="width: 50% " src="assets/img/logo.png">
+    </ion-row>
+    <ion-row>
+      <ion-col width-90 id="login-box">
+        <form>
+          <ion-list>
+            <ion-item>
+              <ion-label><ion-icon name="ios-mail-outline"></ion-icon></ion-label>
+              <ion-input type="text" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label><ion-icon name="ios-lock-outline"></ion-icon></ion-label>
+              <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+          </ion-list>
+          <button ion-button block (click)="doLogin()">Log in</button>
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-50 offset-33>
+        <a href="#">Forgot Password?</a>
+      </ion-col>
+    </ion-row>
+    <br><br>
+    <img src="assets/img/or.png">
+
+    <ion-row class="footer">
+      <ion-col>
+        <p>Don't have an account? <a href="#" color="primary" (click)=register()>Sign Up</a></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</ion-content>

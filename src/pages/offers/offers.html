@@ -1,0 +1,102 @@
+<ion-header no-border>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>offers</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+
+<ion-content>
+	<div class="slide_header">
+		<ion-slides [options]="{pager:true}">
+	    <ion-slide>
+	    	<img src="assets/img/top_banner.jpg">
+	      <div class="info">
+	      	<h2>New season beckons</h2>
+	      	<p>Spring/Summer 2016 Collection</p>
+	      	<button ion-button color="primary" (click)="shop()">Shop now</button>
+	      </div>
+	    </ion-slide>
+
+	    <ion-slide>
+	    	<img src="assets/img/top_banner_1.jpg">
+	      <div class="info second">
+	      	<h2>New Summer Looks</h2>
+	      	<p>Newly kitted Collection</p>
+	      	<button ion-button color="primary" (click)="shop()">Shop now</button>
+	      </div>
+	    </ion-slide>
+
+	    <ion-slide>
+	    	<img src="assets/img/top_banner_2.jpg">
+	      <div class="info third">
+	      	<h2>Dead Gorgeous</h2>
+	      	<p>Fresh New Collection</p>
+	      	<button ion-button color="primary" (click)="shop()">Shop now</button>
+	      </div>
+	    </ion-slide>
+	  </ion-slides>
+	</div>
+
+	<div class="offers">
+		<ion-row>
+			<ion-col width-50>
+				<h4>Deals of the day</h4>
+			</ion-col>
+			<ion-col width-50>
+				<p color="primary" (click)="shop()">See All</p>
+			</ion-col>
+		</ion-row>
+
+		<div class="products">
+			<ion-row class="offerings">
+				<div class="product" (click)="details()">
+					<img src="assets/img/lady_4.png">
+					<p>Minimium 50% off <span>Rain & Rainbow</span></p>
+				</div>
+
+				<div class="product" (click)="details()">
+					<img src="assets/img/lady_3.png">
+					<p>Flat 25% off <span>Hugo Boss Shirts</span></p>
+				</div>
+
+				<div class="product" (click)="details()">
+					<img src="assets/img/lady_1.jpg">
+					<p>Minimium 10% off <span>Mark & Spencer Wears</span></p>
+				</div>
+			</ion-row>
+		</div>
+	</div>
+
+	<div class="offers">
+		<ion-row>
+			<ion-col width-50>
+				<h4>Top Brand Offers</h4>
+			</ion-col>
+			<ion-col width-50 >
+				<p color="primary" (click)="shop()">See All</p>
+			</ion-col>
+		</ion-row>
+
+		<div class="products">
+			<ion-row class="offerings last">
+			<div class="product" (click)="details()">
+				<img src="assets/img/lady_1.jpg">
+				<p>Minimium 50% off <span>Rain & Rainbow</span></p>
+			</div>
+
+			<div class="product" (click)="details()">
+				<img src="assets/img/lady_2.png">
+				<p>Flat 25% off <span>Hugo Boss Shirts</span></p>
+			</div>
+
+			<div class="product" (click)="details()">
+				<img src="assets/img/lady_3.png">
+				<p>Minimium 10% off <span>Mark & Spencer Wears</span></p>
+			</div>
+		</ion-row>
+		</div>
+	</div>
+</ion-content>

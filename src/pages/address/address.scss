@@ -1,0 +1,32 @@
+page-address {
+		ion-row {
+			margin-top: 1rem;
+		}
+		.item {
+			padding-left: 7px;
+		}
+		.no-label {
+			padding-top: 3rem;
+		}
+		ion-label[stacked] {
+			color: #8b949b;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.3rem;
+		}
+		.item .item-inner {
+			
+		}
+		.button {
+			text-transform: uppercase;
+			border-radius: 3rem;
+			width: 70%;
+    	height: 4rem;
+    	display: block;
+    	margin: 0 auto;
+    	font-size: 1.4rem;
+    	font-weight: 600;
+    	margin-top: 5rem;
+    	margin-bottom: 1rem;
+    	
+		}
+}

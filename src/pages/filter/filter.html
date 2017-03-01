@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Filter By</ion-title>
+    <ion-buttons end>
+      <button ion-button navPop>
+        <ion-icon name="ios-close" style="font-size: 4.5rem;padding-right: 0.8rem;color: #8b969c;"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="filter">
+	<ion-row>
+		<ion-col width-33 class="sidebar">
+			<p>Categories</p>
+			<p class="selected">Brands</p>
+			<p>Colour</p>
+			<p>Price</p>
+			<p>Discount</p>
+		</ion-col>
+		<ion-col width-67 class="list">
+			<ion-searchbar placeholder="Search by brand name"></ion-searchbar>
+			<ion-list>
+			  <ion-item (click)="select($event)">
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Alfred Dunhill
+			  </ion-item>
+			  <ion-item (click)="select($event)">
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Armani
+			  </ion-item>
+			  <ion-item (click)="select($event)">
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Beulah London
+			  </ion-item>
+			  <ion-item (click)="select($event)">
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Hugo Boss
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Bulgari
+			  </ion-item>
+			  <ion-item primary>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Burberry
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Calvin Klein
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Cavalli
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Chanel
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Chloé
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Christian Dior
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Dior
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    DKNY
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Dolce & Gabbana
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Tom Ford
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Givenchy
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Gucci
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Tommy Hilfiger
+			  </ion-item>
+			  <ion-item>
+			  	<ion-icon name="ios-checkmark" item-left></ion-icon>
+			    Versace
+			  </ion-item>
+			</ion-list>
+		</ion-col>
+	</ion-row>
+</ion-content>
+
+<ion-footer class="filter-footer">
+	<ion-row>
+		<ion-col width-33>
+			<button ion-button>Clear all</button>
+		</ion-col>
+		<ion-col width-67>
+			<button ion-button color="primary">Apply</button>
+		</ion-col>
+	</ion-row>
+</ion-footer>

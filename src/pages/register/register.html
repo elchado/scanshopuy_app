@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-navbar no-border>
+    <ion-title>SIGN UP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login">
+	<ion-grid class="header">
+	  <ion-row>
+	  	<img  style="width: 50% " src="assets/img/logo.png">
+	  </ion-row>
+	  <ion-row>
+      <ion-col width-90 id="login-box">
+        <form>
+          <ion-list>
+          	<ion-item>
+							<ion-label><ion-icon name="ios-person-outline"></ion-icon></ion-label>
+					    <ion-input type="text" placeholder="Full Name"></ion-input>
+					  </ion-item>
+					  <ion-item>
+							<ion-label><ion-icon name="ios-mail-outline"></ion-icon></ion-label>
+					    <ion-input type="email" placeholder="Email"></ion-input>
+					  </ion-item>
+					  <ion-item>
+					    <ion-label><ion-icon name="ios-lock-outline"></ion-icon></ion-label>
+					    <ion-input type="password" placeholder="Password"></ion-input>
+					  </ion-item>
+					  <ion-item>
+					    <ion-label><ion-icon name="ios-call-outline"></ion-icon></ion-label>
+					    <ion-input type="number" placeholder="Phone"></ion-input>
+					  </ion-item>
+					</ion-list>
+					<button ion-button block>Sign Up Now</button>
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="footer">
+    	<ion-col>
+    		<p>Already have an account? <a href="#" color="primary" (click)=login()>Sign In</a></p>
+    	</ion-col>
+    </ion-row>
+	</ion-grid>
+</ion-content>

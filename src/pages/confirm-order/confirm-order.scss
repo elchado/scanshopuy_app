@@ -1,0 +1,56 @@
+page-confirm-order {
+		.scroll-content {
+			text-align: center;
+		}
+		.order {
+			padding-top: 3rem;
+				h3 {
+					font-weight: 600;
+				}
+				p {
+					font-size: 1.2rem;
+			    color: #89969f;
+			    margin-top: -0.5rem;
+						span {
+							color: #313b45;
+						}
+				}
+		}
+		img {
+			margin: 3rem 0;
+			width: 70%;
+		}
+		.eta {
+				p {
+					color: #313a43;
+					font-family: 'Roboto', sans-serif;
+					font-size: 1.7rem;
+					margin-bottom: 7rem;
+						span {
+							font-family: 'Open Sans', sans-serif;
+							display: block;
+							margin-top: 0.5rem;
+							color: #949da6;
+							font-size: 1.4rem;
+						}
+				}
+		}
+		.button {
+			text-transform: uppercase;
+			border-radius: 3rem;
+			width: 80%;
+    	height: 4.5rem;
+    	display: block;
+    	margin: 0 auto;
+    	font-size: 1.3rem;
+    	font-weight: 600;
+    	margin-bottom: 3rem;
+		}
+		.button {
+			
+		}
+		.button-white {
+			color: #8a949d;
+			
+		}
+}

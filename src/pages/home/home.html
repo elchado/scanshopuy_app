@@ -1,0 +1,73 @@
+<ion-header no-border>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title  text-center >S C A N S H O P Y</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="cart()">
+        <ion-icon name="ios-basket-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+  <ion-grid id="sliders">
+    <div class="first" style="background-image: url('assets/img/slider_2.png');background-repeat: no-repeat;">
+      <div class="text">
+        <h3>International Brands</h3>
+        <h1>Flat 50% off</h1>
+        <img src="assets/img/Hugo-Boss-Logo.svg">
+        <img src="assets/img/D-and-G-logo-vector.png">
+        <img src="assets/img/aj-armani-jeans-logo-vector.png">
+        <button ion-button color="white" (click)="openOffer()">Shop Now</button>
+      </div>
+    </div>
+  </ion-grid>
+
+  <ion-row class="category men" (click)="openWomen()">
+    <ion-col width-33>
+      <h3>Men</h3>
+    </ion-col>
+    <ion-col width-67>
+      <img src="assets/img/men_suit.png">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="category women" (click)="openWomen()">
+    <ion-col width-67>
+      <img src="assets/img/women_shirt.jpg">
+    </ion-col>
+    <ion-col width-33>
+      <h3>Women</h3>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="category kids" (click)="openWomen()">
+    <ion-col width-33>
+      <h3>Kids</h3>
+    </ion-col>
+    <ion-col width-67>
+      <img src="assets/img/kids.png">
+    </ion-col>
+  </ion-row>
+
+
+   <ion-row class="category accessories">
+    <ion-col width-50>
+      <img src="assets/img/kids.png">
+    </ion-col>
+    <ion-col width-50>
+      <h3>Accessories</h3>
+    </ion-col>
+  </ion-row>
+
+  <ion-fab center bottom>
+    <button  ion-fab color="light">
+    <ion-icon ios="ios-barcode-outline" md="md-barcode">
+      
+    </ion-icon></button>
+  
+  </ion-fab>
+</ion-content>

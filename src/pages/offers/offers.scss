@@ -1,0 +1,112 @@
+page-offers {
+	background: #f8f8f8;
+		.toolbar-background {
+	  	background: #fff;
+	  	border-color: transparent;
+		}
+		.scroll-content {
+			background: #f8f8f8;
+		}
+		.slide_header {
+			position: relative;
+				.info {
+					position: absolute;
+			    top: 2rem;
+			    right: 1rem;
+				}
+				.info.second {
+					top: 4rem;
+				}
+				.info.third {
+					right: 19rem;
+    			top: 6rem;
+				}
+				h2 {
+			    font-size: 2rem;
+			    font-weight: 500;
+			    letter-spacing: -0.1rem;
+			    text-transform: uppercase;
+			    margin: 0;
+				}
+				p {
+			    font-size: 1.2rem;
+			    margin: 0;
+				}
+				button {
+					text-transform: uppercase;
+					border-radius: 2rem;
+					padding: 1rem 3rem;
+		    	font-size: 1rem;
+		    	margin-top: 1rem;
+		    	
+				}
+				.swiper-pagination {
+					top: 19rem;
+				}
+				.swiper-pagination-bullet {
+			    opacity: 1;
+			    background: #fff;
+			  }
+			  .swiper-pagination-bullet-active {
+			    opacity: 1;
+			    background: none;
+			    border: 1px solid #c8c8c8;
+			    width: 15px;
+			    height: 15px;
+			    vertical-align: bottom;
+			  }
+		}
+		.offers {
+			margin-top: 1.5rem;
+				.products {
+					overflow: scroll;
+				}
+				ion-col {
+						h4 {
+							text-transform: uppercase;
+							font-size: 1.6rem;
+							font-size: 1.3rem;
+    					font-weight: 400;
+    					margin: 0;
+    					padding-left: 1.5rem;
+    					letter-spacing: -0.1rem;
+						}
+						p {
+							text-align: right;
+							padding-right: 1rem;
+							margin: 0;
+						}
+				}
+				.offerings.last {
+					border-bottom: none;
+				}
+				.offerings {
+					margin-top: 1rem;
+					width: 135%;
+					border-bottom: 1px solid rgba(146,156,166,0.1);
+					padding-left: 1.5rem;
+					padding-bottom: 1rem;
+
+						.product {
+							width: 165px;
+							margin-right: 1rem;
+								img {
+									background: #fff;
+								}
+								p {
+									font-size: 1.3rem;
+									text-transform: capitalize;
+									color: #323a45;
+									text-align: left;
+									margin-top: 0.5rem;
+										span {
+											display: block;
+											padding-top: 0.5rem;
+											color: #929ca6;
+											font-size: 1.2rem;
+										}
+								}
+						}
+				}
+		}
+}

@@ -1,0 +1,68 @@
+page-payment {
+		.toolbar-background {
+			background: #fff;
+			border-color: transparent;
+		}
+		.scroll-content {
+			background: #f8f8f8;
+		}
+		p.cart-total {
+			color: #313944;
+			text-align: center;
+			margin-top: 1.2rem;
+			text-transform: uppercase;
+		}
+		.card {
+			background: #fff;
+			border-radius: 3px;
+			padding-bottom: 2rem;
+			margin-bottom: 2rem;
+		}
+		.new_payment {
+			background: #fff;
+			border-radius: 3px;
+			text-align: left;
+			margin-bottom: 2rem;
+				ion-icon {
+					font-size: 3rem;
+					vertical-align: middle;
+					margin-left: 1rem;
+					margin-right: 1rem;
+				}
+				p {
+					display: inline-block;
+				}
+		}
+		.ship_to {
+			background: #fff;
+			border-radius: 3px;
+			padding: 1rem;
+				h4 {
+					color: #2e3c47;
+					text-transform: uppercase;
+					font-size: 1.5rem;
+					font-weight: 400;
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					color: #8b959e;
+					opacity: .8;
+					width: 70%;
+					margin-top: 0.5rem;
+				}
+		}
+		.button {
+			text-transform: uppercase;
+			border-radius: 3rem;
+			width: 70%;
+    	height: 4rem;
+    	display: block;
+    	margin: 0 auto;
+    	font-size: 1.4rem;
+    	font-weight: 600;
+    	margin-top: 5rem;
+    	margin-bottom: 1rem;
+    	
+		}
+}

@@ -1,0 +1,115 @@
+<ion-header no-border>
+  <ion-navbar no-border-bottom>
+    <ion-title>WOMEN'S DRESS AND JUMPSUIT</ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="ios-search-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="listings">
+	<h5>18,782 Items</h5>
+	<ion-row class="slide_header">
+    <ion-col width-50 (click)="refine()">
+    	<ion-icon name="ios-swap-outline"></ion-icon>
+    	<p>REFINE</p>
+    </ion-col>
+    <ion-col width-50 (click)="sortBy()">
+    	<ion-icon name="ios-switch-outline"></ion-icon>
+    	<p>SORT BY</p>
+    </ion-col>
+  </ion-row>
+	
+	<ion-row wrap class="items">
+		<ion-col width-50 (click)="openDetails()">
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_1.jpg">
+				</div>
+				<h2 primary>Hailey Dress Dress</h2>
+				<h3>$20.5</h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50 (click)="openDetails()">
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_2.png">
+				</div>
+				<h2 primary>Ana Puff Sleeve Dress</h2>
+				<h3>$22 <span>$2.22</span> <span>20%</span></h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50 (click)="openDetails()">
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_3.png">
+				</div>
+				<h2 primary>Red Bodycon Dress</h2>
+				<h3>$25</h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50 (click)="openDetails()">
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_4.png">
+				</div>
+				<h2 primary>Ladies Red Peplum Dress</h2>
+				<h3>$26</h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50>
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_1.jpg">
+				</div>
+				<h2 primary>Hailey Dress Dress</h2>
+				<h3>$20.5 <span>$3.12</span> <span>20%</span></h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50>
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_2.png">
+				</div>
+				<h2 primary>Ana Puff Sleeve Dress</h2>
+				<h3>$22</h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50>
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_3.png">
+				</div>
+				<h2 primary>Red Bodycon Dress</h2>
+				<h3>$25</h3>
+			</div>
+		</ion-col>
+
+		<ion-col width-50>
+			<div class="listing">
+				<div class="image">
+					<ion-icon name="heart-outline"></ion-icon>
+					<img src="assets/img/lady_4.png">
+				</div>
+				<h2 primary>Ladies Red Peplum Dress</h2>
+				<h3>$26</h3>
+			</div>
+		</ion-col>
+	</ion-row>
+
+</ion-content>

@@ -1,0 +1,85 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>Address</ion-title>
+    <ion-buttons end>
+      <p class="navbar-text">Step 2/3</p>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+		<ion-row>
+			<ion-col width-50>
+				<ion-item>
+			    <ion-label stacked>Full Name</ion-label>
+			    <ion-input type="text" placeholder="First name"></ion-input>
+			  </ion-item>
+			</ion-col>
+			<ion-col width-50 class="no-label">
+				<ion-item>
+			    <ion-input type="text" placeholder="Last name"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item>
+			    <ion-label stacked>Address Line 1</ion-label>
+			    <ion-input type="text" placeholder="Address"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item>
+			    <ion-label stacked>Address Line 2</ion-label>
+			    <ion-input type="text" placeholder="Address 2"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col width-50>
+				<ion-item>
+			    <ion-label stacked>City</ion-label>
+			    <ion-input type="text" placeholder="City"></ion-input>
+			  </ion-item>
+			</ion-col>
+			<ion-col width-50>
+				<ion-item>
+					<ion-label stacked>State</ion-label>
+			    <ion-input type="text" placeholder="State"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col width-50>
+				<ion-item>
+			    <ion-label stacked>Zip Code</ion-label>
+			    <ion-input type="number" placeholder="Zipcode"></ion-input>
+			  </ion-item>
+			</ion-col>
+			<ion-col width-50>
+				<ion-item>
+					<ion-label stacked>Country</ion-label>
+			    <ion-input type="text" placeholder="Country"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item>
+			    <ion-label stacked>Phone Number</ion-label>
+			    <ion-input type="text" placeholder="+234 804 682 6828"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+
+		<button ion-button color="primary" (click)="payment()">Save & continue</button>
+
+</ion-content>

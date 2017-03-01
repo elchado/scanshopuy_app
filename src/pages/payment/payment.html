@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>Payment</ion-title>
+    <ion-buttons end>
+      <p class="navbar-text">Step 3/3</p>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<p class="cart-total">Total: <span color="primary">$502</span></p>
+
+	<div class="card">
+		<ion-row>
+			<ion-col>
+				<ion-item>
+			    <ion-label stacked>Card Number</ion-label>
+			    <ion-input type="number"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col width-50>
+				<ion-item>
+			    <ion-label stacked>Expiry</ion-label>
+			    <ion-input type="text" placeholder="MM/YYYY"></ion-input>
+			  </ion-item>
+			</ion-col>
+			<ion-col width-50>
+				<ion-item>
+					<ion-label stacked>CVV2</ion-label>
+			    <ion-input type="number"></ion-input>
+			  </ion-item>
+			</ion-col>
+		</ion-row>
+	</div>
+
+	
+	<div class="new_payment">
+		<ion-icon name="ios-add-circle-outline" primary></ion-icon>
+		<p color="primary">Add New Payment Method</p>
+	</div>
+	<div class="ship_to">
+		<h4>Ship to</h4>
+		<p>8728 Columbus drive, Chivas City, Lagos State, 10001, Nigeria</p>
+	</div>
+
+	<button ion-button color="primary" (click)="pay()">Pay now</button>
+</ion-content>
