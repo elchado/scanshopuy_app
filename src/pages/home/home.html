@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title  text-center >S C A N S H O P Y</ion-title>
+    <ion-title text-center >S C A N S H O P Y</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="cart()">
         <ion-icon name="ios-basket-outline"></ion-icon>
@@ -16,11 +16,9 @@
   <ion-grid id="sliders">
     <div class="first" style="background-image: url('assets/img/slider_2.png');background-repeat: no-repeat;">
       <div class="text">
-        <h3>International Brands</h3>
+        <h3>Deal of the day</h3>
         <h1>Flat 50% off</h1>
-        <img src="assets/img/Hugo-Boss-Logo.svg">
-        <img src="assets/img/D-and-G-logo-vector.png">
-        <img src="assets/img/aj-armani-jeans-logo-vector.png">
+       
         <button ion-button color="white" (click)="openOffer()">Shop Now</button>
       </div>
     </div>
@@ -64,7 +62,7 @@
   </ion-row>
 
   <ion-fab center bottom>
-    <button  ion-fab color="light">
+    <button (click)="scan()" ion-fab color="light">
     <ion-icon ios="ios-barcode-outline" md="md-barcode">
       
     </ion-icon></button>

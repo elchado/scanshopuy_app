@@ -81,3 +81,9 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+@font-face {
+    font-family: "arual";
+    src: url('www/fonts/arual.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
