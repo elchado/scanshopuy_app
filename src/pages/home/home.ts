@@ -14,7 +14,7 @@ import { BarcodeScanner } from 'ionic-native';
 })
 export class HomePage {
  
-  
+  Categories: string = "Woman";
 
 
    private barcodeText:String;

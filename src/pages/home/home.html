@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center >S C A N S H O P Y</ion-title>
+    <ion-title text-center ><img style="height: 20px;" src="assets/img/logo-scandal.png"></ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="cart()">
         <ion-icon name="ios-basket-outline"></ion-icon>
@@ -12,60 +12,150 @@
   </ion-navbar>
 </ion-header>
 
+
+
+
+
+
 <ion-content class="home">
-  <ion-grid id="sliders">
-    <div class="first" style="background-image: url('assets/img/slider_2.png');background-repeat: no-repeat;">
-      <div class="text">
-        <h3>Deal of the day</h3>
-        <h1>Flat 50% off</h1>
-       
-        <button ion-button color="white" (click)="openOffer()">Shop Now</button>
-      </div>
-    </div>
-  </ion-grid>
 
-  <ion-row class="category men" (click)="openWomen()">
-    <ion-col width-33>
-      <h3>Men</h3>
-    </ion-col>
-    <ion-col width-67>
-      <img src="assets/img/men_suit.png">
-    </ion-col>
-  </ion-row>
-
-  <ion-row class="category women" (click)="openWomen()">
-    <ion-col width-67>
-      <img src="assets/img/women_shirt.jpg">
-    </ion-col>
-    <ion-col width-33>
-      <h3>Women</h3>
-    </ion-col>
-  </ion-row>
-
-  <ion-row class="category kids" (click)="openWomen()">
-    <ion-col width-33>
-      <h3>Kids</h3>
-    </ion-col>
-    <ion-col width-67>
-      <img src="assets/img/kids.png">
-    </ion-col>
-  </ion-row>
+  <ion-segment [(ngModel)]="Categories">
 
 
-   <ion-row class="category accessories">
-    <ion-col width-50>
-      <img src="assets/img/kids.png">
-    </ion-col>
-    <ion-col width-50>
-      <h3>Accessories</h3>
-    </ion-col>
-  </ion-row>
+    <ion-segment-button value="Woman">Woman</ion-segment-button>
 
-  <ion-fab center bottom>
-    <button (click)="scan()" ion-fab color="light">
-    <ion-icon ios="ios-barcode-outline" md="md-barcode">
+    <ion-segment-button value="Men">Men</ion-segment-button>
+
+    <ion-segment-button value="Kids">Kids</ion-segment-button>
+
       
-    </ion-icon></button>
-  
-  </ion-fab>
-</ion-content>
+  </ion-segment>
+
+
+  <div [ngSwitch]="Categories">
+
+    <ion-list *ngSwitchCase="'Woman'">
+
+      
+
+
+    <ion-row class="category women" (click)="openWomen()">
+      <ion-col width-67>
+        <img src="assets/img/women_shirt.jpg">
+      </ion-col>
+      <ion-col width-33>
+        <h3 style="font-size: 13px" >Alice & Olivia</h3>
+      </ion-col>
+    </ion-row>
+
+
+     <ion-row class="category men" (click)="openWomen()">
+        <ion-col width-33>
+          <h3 style="font-size: 13px">Chanel</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img style="padding-top: 0px; " src="assets/img/lady_1.jpg">
+        </ion-col>
+      </ion-row>
+
+    <ion-row class="category women" (click)="openWomen()">
+      <ion-col no-padding>
+        <img style=" width: 120% ; height: 120%; background-color: #f1f0eb;"  src="assets/img/women.jpg">
+      </ion-col>
+
+      <ion-col class="campaing-name">
+        <h3 style="font-size: 13px">Summer bags</h3>
+      </ion-col>
+      
+    </ion-row>
+
+      <ion-row class="category women-2" (click)="openWomen()">
+        <ion-col width-33>
+          <h3 style="font-size: 13px; color: black; text-align: justify;">Carolina Herrera</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img style="padding-top: 0px; " src="assets/img/lady_2.png">
+        </ion-col>
+      </ion-row>
+
+    </ion-list>
+
+
+  <ion-list *ngSwitchCase="'Men'">
+
+      <ion-row class="category men-2" (click)="openWomen()">
+        <ion-col width-33>
+          <h3>Hugo Boss</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img src="assets/img/men_suit.png">
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="category women-2" (click)="openWomen()">
+        <ion-col width-33>
+          <h3 style="font-size: 13px; color: black; text-align: justify;">Carolina Herrera</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img style="padding-top: 0px; " src="assets/img/lady_2.png">
+        </ion-col>
+      </ion-row>
+
+    <ion-row class="category women" (click)="openWomen()">
+      <ion-col width-67>
+        <img src="assets/img/women_shirt.jpg">
+      </ion-col>
+      <ion-col width-33>
+        <h3>Women</h3>
+      </ion-col>
+    </ion-row>
+
+    </ion-list>
+
+
+
+  <ion-list *ngSwitchCase="'Kids'">
+
+      <ion-row class="category kids" (click)="openWomen()">
+        <ion-col width-33>
+          <h3>Kids</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img src="assets/img/kids.png">
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="category men" (click)="openWomen()">
+        <ion-col width-33>
+          <h3>Men</h3>
+        </ion-col>
+        <ion-col width-67>
+          <img src="assets/img/men_suit.png">
+        </ion-col>
+      </ion-row>
+
+    <ion-row class="category women" (click)="openWomen()">
+      <ion-col width-67>
+        <img src="assets/img/women_shirt.jpg">
+      </ion-col>
+      <ion-col width-33>
+        <h3>Women</h3>
+      </ion-col>
+    </ion-row>
+
+    </ion-list>
+
+  </div>
+
+
+
+
+    <ion-fab center bottom>
+      <button (click)="scan()" ion-fab color="primary" class="fab fab-ios fab-ios-primary">
+      <ion-icon ios="ios-barcode-outline" md="md-barcode">
+        
+      </ion-icon></button>
+    
+    </ion-fab>
+  </ion-content>
